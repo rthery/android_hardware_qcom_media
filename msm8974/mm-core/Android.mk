@@ -87,6 +87,7 @@ LOCAL_COPY_HEADERS      += inc/QCMetaData.h
 LOCAL_C_INCLUDES        := $(LOCAL_PATH)/src/common
 LOCAL_C_INCLUDES        += $(LOCAL_PATH)/inc
 LOCAL_MODULE            := libOmxCore
+LOCAL_PROPRIETARY_MODULE := true
 LOCAL_LICENSE_KINDS     := SPDX-license-identifier-BSD SPDX-license-identifier-MIT
 LOCAL_LICENSE_CONDITIONS := notice
 LOCAL_MODULE_TAGS       := optional
@@ -112,6 +113,7 @@ include $(CLEAR_VARS)
 LOCAL_C_INCLUDES        := $(LOCAL_PATH)/src/common
 LOCAL_C_INCLUDES        += $(LOCAL_PATH)/inc
 LOCAL_MODULE            := libmm-omxcore
+LOCAL_PROPRIETARY_MODULE := true
 LOCAL_LICENSE_KINDS     := SPDX-license-identifier-BSD SPDX-license-identifier-MIT
 LOCAL_LICENSE_CONDITIONS := notice
 LOCAL_MODULE_TAGS       := optional

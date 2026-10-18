@@ -8,13 +8,16 @@ LOCAL_SRC_FILES := \
 LOCAL_CFLAGS += -Wno-error
 
 LOCAL_C_INCLUDES := \
-    $(TARGET_OUT_HEADERS)/qcom/display
+    $(TARGET_OUT_HEADERS)/qcom/display \
+    kernel/lge/bullhead/include/uapi \
+    hardware/qcom/media/msm8974/uapi-shim
 
 LOCAL_SHARED_LIBRARIES := liblog libdl
 
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_MODULE := libc2dcolorconvert
+LOCAL_PROPRIETARY_MODULE := true
 LOCAL_LICENSE_KINDS := SPDX-license-identifier-BSD
 LOCAL_LICENSE_CONDITIONS := notice
 

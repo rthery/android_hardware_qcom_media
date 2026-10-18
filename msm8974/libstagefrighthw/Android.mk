@@ -38,6 +38,7 @@ LOCAL_COPY_HEADERS            := QComOMXMetadata.h \
                                  QComOMXPlugin.h
 
 LOCAL_MODULE := libstagefrighthw
+LOCAL_PROPRIETARY_MODULE := true
 LOCAL_LICENSE_KINDS := SPDX-license-identifier-Apache-2.0
 LOCAL_LICENSE_CONDITIONS := notice
 LOCAL_NOTICE_FILE := $(LOCAL_PATH)/NOTICE

@@ -96,6 +96,8 @@ include $(CLEAR_VARS)
 LOCAL_PATH:= $(ROOT_DIR)
 
 libmm-vdec-inc          := $(LOCAL_PATH)/vdec/inc
+libmm-vdec-inc          += kernel/lge/bullhead/include/uapi
+libmm-vdec-inc          += hardware/qcom/media/msm8974/uapi-shim
 libmm-vdec-inc          += $(OMX_VIDEO_PATH)/vidc/common/inc
 libmm-vdec-inc          += hardware/qcom/media/msm8974/mm-core/inc
 #DRM include - Interface which loads the DRM library
@@ -110,6 +112,7 @@ libmm-vdec-inc      += frameworks/av/include/media/stagefright
 
 
 LOCAL_MODULE                    := libOmxVdec
+LOCAL_PROPRIETARY_MODULE := true
 LOCAL_LICENSE_KINDS             := SPDX-license-identifier-BSD
 LOCAL_LICENSE_CONDITIONS        := notice
 LOCAL_MODULE_TAGS               := optional
@@ -156,6 +159,7 @@ LOCAL_PATH:= $(ROOT_DIR)
 ifneq ($(filter msm8974 msm8610 msm8084 msm8952 msm8992 msm8994,$(TARGET_BOARD_PLATFORM)),)
 
 LOCAL_MODULE                    := libOmxVdecHevc
+LOCAL_PROPRIETARY_MODULE := true
 LOCAL_LICENSE_KINDS             := SPDX-license-identifier-BSD
 LOCAL_LICENSE_CONDITIONS        := notice
 LOCAL_MODULE_TAGS               := optional

@@ -76,6 +76,8 @@ libmm-venc-def += -D_ANDROID_ICS_
 include $(CLEAR_VARS)
 
 libmm-venc-inc      := $(LOCAL_PATH)/venc/inc
+libmm-venc-inc          += kernel/lge/bullhead/include/uapi
+libmm-venc-inc          += hardware/qcom/media/msm8974/uapi-shim
 libmm-venc-inc      += $(OMX_VIDEO_PATH)/vidc/common/inc
 libmm-venc-inc      += hardware/qcom/media/msm8974/mm-core/inc
 libmm-venc-inc      += hardware/qcom/media/msm8974/libstagefrighthw
@@ -89,6 +91,7 @@ libmm-venc-inc      += frameworks/av/include/media/hardware
 libmm-venc-inc      += $(venc-inc)
 
 LOCAL_MODULE                    := libOmxVenc
+LOCAL_PROPRIETARY_MODULE := true
 LOCAL_LICENSE_KINDS             := SPDX-license-identifier-BSD
 LOCAL_LICENSE_CONDITIONS        := notice
 LOCAL_MODULE_TAGS               := optional

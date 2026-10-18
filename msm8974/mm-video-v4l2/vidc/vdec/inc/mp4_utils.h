@@ -154,7 +154,7 @@ class MP4_Utils
         };
 
         posInfoType m_posInfo;
-        byte *m_dataBeginPtr;
+        ::byte *m_dataBeginPtr;
         unsigned int vop_time_resolution;
         bool vop_time_found;
         uint16 m_SrcWidth, m_SrcHeight;   // Dimensions of the source clip
